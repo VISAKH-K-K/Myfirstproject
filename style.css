@@ -1,0 +1,349 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-weight: 500;
+}
+ul{
+    float: right;
+    display: flex;
+}
+ul li{
+    list-style: none;
+    margin: 20px;
+}
+ul a{
+    text-decoration: none;
+    color: brown;
+}
+ ul a:hover{
+    text-shadow: 5px 4px 3px black;
+}
+header{
+    background-image: url(https://cdn.pixabay.com/photo/2019/12/03/21/29/mountains-4671122_960_720.jpg);
+    height: 700px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#welcome{
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    padding: 60px;
+    border: 2px double white;
+    background-color: rgba(255, 255, 255, 0.614);
+    width: 500px;
+    height: 200px;
+}
+.btn {
+    --color: #00A97F;
+    --color2: rgb(10, 25, 30);
+    padding: 0.8em 1.75em;
+    background-color: transparent;
+    border-radius: 6px;
+    border: .3px solid var(--color);
+    transition: .5s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    font-weight: 300;
+    font-size: 17px;
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    text-transform: uppercase;
+    color: var(--color);
+   }
+   
+   .btn::after, .btn::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    transform: skew(90deg) translate(-50%, -50%);
+    position: absolute;
+    inset: 50%;
+    left: 25%;
+    z-index: -1;
+    transition: .5s ease-out;
+    background-color: var(--color);
+   }
+   
+   .btn::before {
+    top: -50%;
+    left: -25%;
+    transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+   }
+   
+   .btn:hover::before {
+    transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+   }
+   
+   .btn:hover::after {
+    transform: skew(45deg) translate(-50%, -50%);
+   }
+   
+   .btn:hover {
+    color: var(--color2);
+   }
+   
+   .btn:active {
+    filter: brightness(.7);
+    transform: scale(.98);
+   }
+.row{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+}
+.col{
+    width: 400px;
+}
+p{
+    text-align: justify;
+}
+h1{
+    text-align: center;
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff5252;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px #000;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #fff;
+    color: #ff5252;
+    border: 2px solid #ff5252;
+    box-shadow: 5px 5px 0px #ff5252;
+  }
+  
+  .button:active {
+    background-color: #fcf414;
+    box-shadow: none;
+    transform: translateY(4px);
+  }
+  .card {
+    width: 1500px;
+    height: 254px;
+    border-radius: 4px;
+    background: #212121;
+    display: flex;
+    gap: 5px;
+    padding: .4em;
+  }
+  
+  .card p {
+    height: 100%;
+    flex: 1;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all .5s;
+    background: #212121;
+    border: 1px solid #ff5a91;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card p:hover {
+    flex: 4;
+  }
+  
+  .card p span {
+    min-width: 14em;
+    padding: .5em;
+    text-align: center;
+    transform: rotate(-90deg);
+    transition: all .5s;
+    text-transform: uppercase;
+    color: #ff568e;
+    letter-spacing: .1em;
+  }
+  
+  .card p:hover span {
+    transform: rotate(0);
+  }
+  section h1{
+    margin-top: 100px;
+  }
+  #fav{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-evenly;
+  }
+  .card {
+    box-sizing: border-box;
+    width: 300px;
+    height: 400px;
+    background: rgba(217, 217, 217, 0.58);
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    font-weight: bolder;
+    color: black;
+    background-image: url(https://www.zicasso.com/static/1613b7fe4e02309dcd902b3f19405262/304cc/1613b7fe4e02309dcd902b3f19405262.jpg);
+  }
+  
+  .card:hover {
+    border: 1px solid black;
+    transform: scale(1.05);
+  }
+  
+  .card:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+  }
+  .card1 {
+    box-sizing: border-box;
+    width: 300px;
+    height: 400px;
+    background: rgba(217, 217, 217, 0.58);
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    font-weight: bolder;
+    color: black;
+    background-image: url(https://www.planetware.com/photos-large/AUS/australia-beautiful-places-sydney-harbour.jpg);
+  }
+  
+  .card1:hover {
+    border: 1px solid black;
+    transform: scale(1.05);
+  }
+  
+  .card1:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+  }
+  .card2 {
+    box-sizing: border-box;
+    width: 300px;
+    height: 400px;
+    background: rgba(217, 217, 217, 0.58);
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    font-weight: bolder;
+    color: black;
+    background-image: url(https://image.jimcdn.com/app/cms/image/transf/none/path/sa6549607c78f5c11/image/ia4aa470464f3e8ff/version/1597587429/travel-spain-tourism.jpg);
+  }
+  
+  .card2:hover {
+    border: 1px solid black;
+    transform: scale(1.05);
+  }
+  
+  .card2:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+  }
+  .card3 {
+    box-sizing: border-box;
+    width: 300px;
+    height: 400px;
+    background: rgba(217, 217, 217, 0.58);
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    font-weight: bolder;
+    color: black;
+    background-image: url(https://img.freepik.com/premium-photo/majestic-view-great-wall-china-stretching-across-horizon-like-ribbon-ancient_349863-787.jpg);
+  }
+  
+  .card3:hover {
+    border: 1px solid black;
+    transform: scale(1.05);
+  }
+  
+  .card3:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+  }
+  #blog{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-evenly;
+  }
+  div a{
+    text-decoration: none;
+    color: black;
+  }
+  #sub{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(216, 135, 135);
+    height: 100px;
+    align-items: center;
+  }
+  input{
+    width: 500px;
+    height: 50px;
+  }
+  button{
+    height: 50px;
+    background-color: rgb(54, 182, 54);
+  }
+  footer{
+    background-color: rgb(157, 29, 29);
+    height: 300px;
+    padding-top: 20px;
+  }
+  footer img{
+    width: 200px;
+    height: 150px;
+  }
+  .row1{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.col1{
+    width: 400px;
+}
+#last{
+  text-align-last: center;
+}
